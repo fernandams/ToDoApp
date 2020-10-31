@@ -1,12 +1,13 @@
 import React from "react";
-import { View, Text } from "react-native";
-import { styles } from "../components/Text";
+import { SafeAreaView, Text } from "react-native";
+import { styles as textStyles } from "../components/Text";
+import { styles as containerStyles } from "../components/Container";
 
 const Home = () => {
   return (
-    <View style={styles.container}>
-      <Text>Oi sdds!</Text>
-    </View>
+    <SafeAreaView style={containerStyles.container}>
+      <Text style={textStyles.title}>Checklist</Text>
+    </SafeAreaView>
   );
 };
 
